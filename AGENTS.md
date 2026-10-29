@@ -12,8 +12,11 @@ This repository is a library of film styles. Each style has a `styles/<slug>/STY
 | Tool commands and flags | [`core/README.md`](core/README.md) |
 | The user wants to change a style and keep it as their own, or make their own style from a blank page, or names a style in `~/lemo-my-styles/` | [`MY-STYLES.md`](MY-STYLES.md) |
 | Adding a style to the library (owner only) | [`MAINTAINING.md`](MAINTAINING.md) |
+| Making a film editable in the Mochi Studio film editor (every film, in this fork) | [`STUDIO.md`](STUDIO.md) |
 
 **Films outside `styles/` are the user's: no LemoLab credit, no watermark.**
+
+**This fork: every film is editable.** Scaffold it with `sh ext/studio/new-film.sh <name>` before writing the page, and keep every time, narration line, subtitle and on-screen word in its `film.data.json` ([`STUDIO.md`](STUDIO.md)), so the Mochi Studio film editor can open, edit and rebuild it.
 
 ## Start
 
@@ -72,17 +75,18 @@ All 66 styles · 全部风格:
    - anything missing on their machine: first run `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps` from the library root (core only) and include what it reports. Add the voice and music tiers later, only if the film needs them (TECHNIQUE.md §1).
 
    Skip what their request already answers. Wait for the reply, fill every other gap with a sensible default, sum up the brief in a few lines and start. Don't come back with more questions.
-2. **Treatment.** Write `TREATMENT.md` in the project folder (DIRECTOR.md §4), before you open the demo (an Edit & Documentary style gathers its material first: **Treatment first** above).
-3. **Look.** Render style frames or a model sheet with the real drawing code and check them against `STYLE.md` (DIRECTOR.md §5).
-4. **Storyboard, only if the user asked for it** (DIRECTOR.md §5). **Stop and wait for approval.** Otherwise don't stop.
-5. **Produce.** Voice → check → score (can run in parallel) → animation → mix → render (TECHNIQUE.md).
-6. **Self-check and deliver** (DIRECTOR.md §11).
+2. **Scaffold.** `sh ext/studio/new-film.sh <name> --lang <en|zh> --title "…" --style <slug>` (STUDIO.md §1): the page, `mix.py` and `build.sh` are then written against its `film.data.json`, `timeline.js` and `studio.json`.
+3. **Treatment.** Write `TREATMENT.md` in the project folder (DIRECTOR.md §4), before you open the demo (an Edit & Documentary style gathers its material first: **Treatment first** above).
+4. **Look.** Render style frames or a model sheet with the real drawing code and check them against `STYLE.md` (DIRECTOR.md §5).
+5. **Storyboard, only if the user asked for it** (DIRECTOR.md §5). **Stop and wait for approval.** Otherwise don't stop.
+6. **Produce.** Voice → check → score (can run in parallel) → animation → mix → render (TECHNIQUE.md).
+7. **Self-check and deliver** (DIRECTOR.md §11, plus STUDIO.md §6).
 
 Report progress in the user's language. If a step fails, read the error, fix the cause and retry; go back to the user only for a decision or something only they can provide.
 
 ## Where things go
 
-- The film's project folder is `films/<name>/` in a clone (ignored by git), or `<name>/` in the user's folder in skill mode (see the skill's `SKILL.md`). Wherever a guide says `films/<name>/`, read "the project folder". Work only there, unless the user asks you to work in their own project.
+- The film's project folder is `films/<name>/` in a clone (in this fork its source is committed, its renders and downloads stay local: STUDIO.md §6), or `<name>/` in the user's folder in skill mode (see the skill's `SKILL.md`). Wherever a guide says `films/<name>/`, read "the project folder". Work only there, unless the user asks you to work in their own project.
 - Run `node core/…` and `sh tools/…` from the library root (`$LIB` in skill mode).
 - `core/` has ready-made tools (rendering, TTS, speech check, sampler, sfx, mux). Use them or your own stack, but don't edit `core/` or `styles/` for a user's film.
 - Never kill processes you didn't start. Don't leave background processes running.
