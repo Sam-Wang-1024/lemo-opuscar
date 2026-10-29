@@ -1,0 +1,35 @@
+Who Built the First Time Machine? — Archive Light Table
+A short film made from public-domain scans. No AI-generated images, no stock footage. Every light, mark, card and
+label is drawn by the page (WebGL2 + 2D canvas). Every claim and its source: FACTS.md. Scans accessed 2026-10-29.
+
+ARCHIVE OBJECTS (public domain)
+- The Sun (New York), vol. 49 no. 18, Sunday 18 September 1881, page 2 ("The Clock That Went Backward", unsigned;
+  by Edward Page Mitchell). Internet Archive, nysun18810918 — Public Domain Mark 1.0.
+  https://archive.org/details/nysun18810918
+- Enrique Gaspar, El Anacronópete · Viaje á China · Metempsícosis, Barcelona: Daniel Cortezo y C.ª, 1887;
+  illustrations by Francesc Gómez Soler. Cover, title page, page 63. Internet Archive, gaspar-el-anacronopete-1887,
+  digitised from HathiTrust uc1.$b65866 (University of California) — Public Domain Mark 1.0.
+  https://archive.org/details/gaspar-el-anacronopete-1887
+- H. G. Wells, The Time Machine: An Invention, London: William Heinemann, 1895. Cover, title page, page 3.
+  Wikimedia Commons, File:The Time Machine (H. G. Wells, William Heinemann, 1895).djvu, from HathiTrust
+  record 001693893 (University of Illinois) — public domain.
+  https://commons.wikimedia.org/wiki/File:The_Time_Machine_(H._G._Wells,_William_Heinemann,_1895).djvu
+  Changes (all): cropped pages placed on a virtual light table, backlit, magnified, lines brightened and underlined;
+  on page 63 the ship is cut out as its own layer and its spot refilled from the neighbouring hatching.
+
+FONTS (SIL Open Font License 1.1, licence texts in fonts/; subset with the Google Fonts API)
+- IBM Plex Mono — IBM
+- Inter — The Inter Project Authors
+- Libre Caslon Text — Pablo Impallari, Rodrigo Fuenzalida
+
+VOICE
+- Kokoro-82M (hexgrad), voice af_heart, Apache License 2.0; run locally via kokoro-onnx (MIT).
+  Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).
+
+MUSIC & SOUND (original score and sound design in mix.py; sampled instruments through the library's core/audio/sampler.py)
+- Piano: "Salamander Grand Piano V3" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios),
+  Versilian Community Sample Library (Versilian Studios) — glass harp, bowed vibraphone, vibraphone, harp, violins,
+  violas, cellos, contrabass
+- Sound effects (light-table hum, loupe on glass, paper, ticks, a clock ticking backward, pen, relay): synthesised in
+  mix.py with core/audio/sfx.py

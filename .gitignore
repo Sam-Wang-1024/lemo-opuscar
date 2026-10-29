@@ -84,7 +84,17 @@ styles/*/demo/stills/*
 !styles/news-package/demo/assets/plates/*.jpg
 
 # 用户自己的片子（agent 输出）
-/films/
+# Fork: film sources are versioned here; renders, downloads and everything a build regenerates stay local
+/films/*/out/
+/films/*/versions/
+/films/*/frames/
+/films/*/stills/
+/films/*/assets/raw/
+/films/*/assets/tex/
+/films/*/voice/out/
+/films/*/fonts/
+/films/*/events.json
+/films/*/*.mp4
 
 
 # Production logs are internal: they stay local

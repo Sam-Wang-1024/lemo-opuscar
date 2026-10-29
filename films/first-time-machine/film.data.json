@@ -1,0 +1,324 @@
+{
+ "title": "Who Built the First Time Machine?",
+ "style": "archive-lighttable",
+ "fps": 24,
+ "bpm": 72,
+ "dur": 60,
+ "hit": {
+  "lineInv": 1.6667,
+  "widen": 4.1667,
+  "lineTitle": 5,
+  "rise1": 7.5,
+  "lift1": 8.75,
+  "line4d": 10.8333,
+  "back1": 13.3333,
+  "drop2": 15.8333,
+  "dive2": 16.25,
+  "lineAna": 17.0833,
+  "line1887": 19.1667,
+  "rise2": 20.8333,
+  "drop3": 22.0833,
+  "dive3": 22.5,
+  "lineMont": 23.3333,
+  "enter": 25.8333,
+  "rise3": 29.1667,
+  "back2": 30,
+  "drop4": 32.9167,
+  "dive4": 33.3333,
+  "lineHead": 34.1667,
+  "trackHands": 37.5,
+  "lineHands": 40.4167,
+  "trackTime": 42.5,
+  "lineTime": 44.1667,
+  "rise4": 47.9167,
+  "index": 49.1667,
+  "row1881": 52.0833,
+  "row1887": 53.75,
+  "endCard": 55.4167,
+  "row1895": 56.25,
+  "lightsOut": 58.3333
+ },
+ "voice": [
+  {
+   "id": "L1",
+   "t": 0.5,
+   "text": "In eighteen ninety-five, H. G. Wells called it an invention.",
+   "voice": "af_heart",
+   "speed": 0.95,
+   "asr": "In 1895, H. G. Wells called it an invention."
+  },
+  {
+   "id": "L2",
+   "t": 4.6,
+   "text": "The Time Machine. The name stuck.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L3",
+   "t": 10.4,
+   "text": "But was the idea new?",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L4",
+   "t": 16.15,
+   "text": "Eight years earlier, in Barcelona, Enrique Gaspar launched the anacronopete:",
+   "voice": "af_heart",
+   "speed": 0.95,
+   "asr": "Eight years earlier, in Barcelona, Enrique Gaspar launched the Anacrono Pete."
+  },
+  {
+   "id": "L5",
+   "t": 21.2,
+   "text": "a ship that flies against time.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L6",
+   "t": 23.9,
+   "text": "It rose over the city like a hot air balloon.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L7",
+   "t": 33.5,
+   "text": "Six years before that, a New York paper printed a story with no name on it.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L8",
+   "t": 40.4,
+   "text": "A clock whose hands ran backward.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L9",
+   "t": 44.5,
+   "text": "Its author, Edward Page Mitchell, went uncredited for decades.",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L10",
+   "t": 49.4,
+   "text": "So, who built the first time machine?",
+   "voice": "af_heart",
+   "speed": 0.95
+  },
+  {
+   "id": "L11",
+   "t": 52,
+   "text": "A clock, in eighteen eighty-one. A ship, in eighteen eighty-seven.",
+   "voice": "af_heart",
+   "speed": 0.95,
+   "asr": "A clock, in 1881. A ship, in 1887."
+  },
+  {
+   "id": "L12",
+   "t": 56.1,
+   "text": "And in eighteen ninety-five, the name.",
+   "voice": "af_heart",
+   "speed": 0.95,
+   "asr": "And in 1895, the name."
+  }
+ ],
+ "subs": [
+  {
+   "id": "S1",
+   "line": "L1",
+   "en": "In 1895, H. G. Wells called it an invention."
+  },
+  {
+   "id": "S2",
+   "line": "L2",
+   "en": "The Time Machine. The name stuck."
+  },
+  {
+   "id": "S3",
+   "line": "L3",
+   "en": "But was the idea new?"
+  },
+  {
+   "id": "S4a",
+   "line": "L4",
+   "en": "Eight years earlier, in Barcelona,"
+  },
+  {
+   "id": "S4b",
+   "line": "L4",
+   "from": "enrique",
+   "en": "Enrique Gaspar launched the anacronópete:"
+  },
+  {
+   "id": "S5",
+   "line": "L5",
+   "en": "a ship that flies against time."
+  },
+  {
+   "id": "S6",
+   "line": "L6",
+   "en": "It rose over the city like a hot air balloon."
+  },
+  {
+   "id": "S7a",
+   "line": "L7",
+   "en": "Six years before that, a New York paper"
+  },
+  {
+   "id": "S7b",
+   "line": "L7",
+   "from": "printed",
+   "en": "printed a story with no name on it."
+  },
+  {
+   "id": "S8",
+   "line": "L8",
+   "en": "A clock whose hands ran backward."
+  },
+  {
+   "id": "S9",
+   "line": "L9",
+   "en": "Its author, Edward Page Mitchell, went uncredited for decades."
+  },
+  {
+   "id": "S10",
+   "line": "L10",
+   "en": "So, who built the first time machine?"
+  },
+  {
+   "id": "S11a",
+   "line": "L11",
+   "en": "A clock, in 1881."
+  },
+  {
+   "id": "S11b",
+   "line": "L11",
+   "from": "ship",
+   "en": "A ship, in 1887."
+  },
+  {
+   "id": "S12",
+   "line": "L12",
+   "en": "And in 1895, the name."
+  }
+ ],
+ "texts": {
+  "wells": [
+   "H. G. WELLS · 1895",
+   "The Time Machine",
+   "London: William Heinemann"
+  ],
+  "fourd": [
+   "CH. I · P. 3",
+   "Time as a fourth dimension"
+  ],
+  "gaspar": [
+   "ENRIQUE GASPAR · BARCELONA",
+   "1887",
+   "El anacronópete",
+   "“one who flies against time”"
+  ],
+  "mont": [
+   "P. 63",
+   "“El Anacronópete se elevaba con la majestad de un montgolfier.”",
+   "It rose with the majesty of a hot-air balloon."
+  ],
+  "ship": [
+   "the time ship",
+   "ill. F. Gómez Soler, 1887"
+  ],
+  "sun": [
+   "THE SUN · NEW YORK",
+   "18 SEPT 1881",
+   "Page 2 · no byline"
+  ],
+  "mitchell": [
+   "AUTHOR, NAMED DECADES LATER",
+   "Edward Page Mitchell"
+  ],
+  "tags": [
+   "1895",
+   "H. G. Wells · London",
+   "1887",
+   "E. Gaspar · Barcelona",
+   "1881",
+   "The Sun · New York"
+  ],
+  "index": [
+   "Who built it first?",
+   "INDEX · 3"
+  ],
+  "row1881": [
+   "1881",
+   "a clock",
+   "The Sun, New York · unsigned",
+   "archive.org nysun18810918"
+  ],
+  "row1887": [
+   "1887",
+   "a ship",
+   "Enrique Gaspar, Barcelona",
+   "HathiTrust uc1.$b65866"
+  ],
+  "row1895": [
+   "1895",
+   "the name",
+   "H. G. Wells, London",
+   "HathiTrust 001693893"
+  ],
+  "end": [
+   "Who Built the First Time Machine?",
+   "ARCHIVE LIGHT TABLE · 1881 · 1887 · 1895"
+  ]
+ },
+ "mix": {
+  "music": 0,
+  "foley": 0,
+  "beds": 0,
+  "voice": 0,
+  "mute": {
+   "music": false,
+   "foley": false,
+   "beds": false,
+   "voice": false
+  }
+ },
+ "sections": [
+  {
+   "label": "1895 · Wells",
+   "from": 0,
+   "to": "back1"
+  },
+  {
+   "label": "glide back",
+   "from": "back1",
+   "to": "drop2"
+  },
+  {
+   "label": "1887 · Gaspar",
+   "from": "drop2",
+   "to": "back2"
+  },
+  {
+   "label": "glide back",
+   "from": "back2",
+   "to": "drop4"
+  },
+  {
+   "label": "1881 · The Sun",
+   "from": "drop4",
+   "to": "index"
+  },
+  {
+   "label": "verdict",
+   "from": "index",
+   "to": "end"
+  }
+ ]
+}

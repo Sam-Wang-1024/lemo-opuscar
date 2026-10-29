@@ -1,0 +1,32 @@
+{
+ "name": "first-time-machine",
+ "output": "first-time-machine.mp4",
+ "fps": 24,
+ "data": "film.data.json",
+ "stems": { "music": "out/stems/music.wav", "foley": "out/stems/foley.wav", "beds": "out/stems/beds.wav", "voice": "out/stems/voice.wav" },
+ "voice_dir": "voice/out",
+ "steps": {
+  "fonts":     [["$PY", "-I", "$FILM/tools/fonts.py", "$FILM"]],
+  "voice":     [["$NODE", "$FILM/tools/sync.mjs", "$FILM"],
+                ["$PY", "core/tts/tts.py", "$FILM/voice/lines.json", "$FILM/voice/out"],
+                ["$PY", "core/tts/asr_check.py", "$FILM/voice/lines.json", "$FILM/voice/out", "--lang", "en", "--model", "small.en"]],
+  "cues":      [["$NODE", "$FILM/tools/export.mjs", "$FILM"],
+                ["$PY", "core/render/srt.py", "$FILM/out/cues_srt.json", "$FILM/first-time-machine.srt"]],
+  "events":    [["$NODE", "core/render/events.mjs", "$FILM"]],
+  "mix":       [["$PY", "$FILM/mix.py"]],
+  "video":     [["$NODE", "core/render/video.mjs", "$FILM", "--fps", "24", "--workers", "4", "--out", "$FILM/out/video.mp4"]],
+  "master":    [["sh", "core/render/mux.sh", "$FILM/out/video.mp4", "$FILM/out/mix.wav", "$FILM/first-time-machine.mp4", "24", "1"]],
+  "readcheck": [["$NODE", "core/render/readcheck.mjs", "$FILM"]]
+ },
+ "order": ["fonts", "voice", "cues", "events", "mix", "video", "master", "readcheck"],
+ "depends": {
+  "hit":      ["cues", "events", "mix", "video", "master", "readcheck"],
+  "voice":    ["voice", "cues", "events", "mix", "video", "master", "readcheck"],
+  "subs":     ["cues", "video", "master"],
+  "texts":    ["fonts", "video", "master", "readcheck"],
+  "mix":      ["mix", "master"],
+  "sections": [],
+  "bpm":      ["cues", "events", "mix", "video", "master"],
+  "dur":      ["cues", "events", "mix", "video", "master"]
+ }
+}
